@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Sebras Porta4.0 Config</string>
+    <string name="title_devices">Pesquisa do Porta 4.0</string>
+
+    <string name="error_no_bluetooth">Bluetooth não é compatível</string>
+    <string name="error_no_ble">BLE não é compatível</string>
+    <string name="error_credentials">Informação incompleta!</string>
+    <string name="error_sending">Erro ao enviar para o dispositivo: %1$s</string>
+    <string name="error_no_connection">Não conectado</string>
+    <string name="error_user_reject">"Se você não ligar o Bluetooth, este aplicativo não funciona!"</string>
+
+    <string name="no_data">No data</string>
+    <string name="empty_response">"Empty response"</string>
+    <string name="unknown_device">Unknown device</string>
+    <string name="manual_pair_req">Please pair the device first</string>
+
+    <string name="get_config">Reading Porta4.0 configuration</string>
+    <string name="update_config">Writing new configuration - MUST RESTART AFTER WRITING</string>
+    <string name="erase_config">Erasing Porta4.0 configuration</string>
+    <string name="reset_device">Reset Porta4.0</string>
+
+    <string name="type_bt">"Bluetooth Serial"</string>
+    <string name="type_ble">"BLE"</string>
+    <string name="type_mix">"Bluetooth Serial + BLE"</string>
+    <string name="type_unknown">"Unknown type"</string>
+
+    <!-- Button items -->
+    <string name="write_button">Send config</string>
+    <string name="read_button">Get config</string>
+    <string name="erase_button">Erase config</string>
+    <string name="reset_button">Restart Porta4.0</string>
+    <string name="sel_num_ap">Use WiFi</string>
+
+    <!-- Text input -->
+    <string name="ID">ID</string>
+    <string name="ssid">SSID</string>
+    <string name="password">Password</string>
+    <string name="apn">APN</string>
+    <string name="gprsUser">gprsUser</string>
+    <string name="gprsPass">gprsPass</string>
+    <string name="mVperV">mVperV</string>
+    <string name="mVperA">mVperA</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Connect</string>
+    <string name="menu_disconnect">Disconnect</string>
+    <string name="menu_scan">Scan</string>
+    <string name="menu_stop">Stop Scan</string>
+</resources>

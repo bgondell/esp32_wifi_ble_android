@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.polidea.rxandroidble2:rxandroidble:1.5.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/e66bd615f72596d4fd513c38ba137bb9/rxandroidble-1.5.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/e66bd615f72596d4fd513c38ba137bb9/rxandroidble-1.5.0/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/e66bd615f72596d4fd513c38ba137bb9/rxandroidble-1.5.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/e66bd615f72596d4fd513c38ba137bb9/rxandroidble-1.5.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/rxandroidble/1.5.0/5651bbba38e5bad6547ac3a96588427e2c25cee4/rxandroidble-1.5.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.polidea.rxandroidble2/rxandroidble/1.5.0/c1c586f1e1664a9773795381c9a9d80f359bc544/rxandroidble-1.5.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

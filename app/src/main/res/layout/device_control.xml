@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ButtonStyle, LabelFor">
+
+    <View
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/readBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/center"
+        android:onClick="onClickRead"
+        android:text="@string/read_button"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/writeBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/center"
+        android:onClick="onClickWrite"
+        android:text="@string/write_button"
+        android:textColor="@android:color/holo_green_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/eraseBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/readBT"
+        android:layout_toStartOf="@+id/center"
+        android:onClick="onClickErase"
+        android:text="@string/erase_button"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/resetBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/writeBT"
+        android:layout_toEndOf="@+id/center"
+        android:onClick="onClickReset"
+        android:text="@string/reset_button"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/data_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/mVperA"
+        android:text="@string/no_data" />
+
+    <Switch
+        android:id="@+id/USE_WIFISelector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eraseBT"
+        android:layout_alignParentStart="true"
+        android:checked="true"
+        android:onClick="onClickSwitch"
+        android:text="@string/sel_num_ap" />
+
+    <TextView
+        android:id="@+id/IDHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/USE_WIFISelector"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/ID"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/USE_WIFISelector"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/ID"
+        tools:ignore="LabelFor" />
+
+
+    <TextView
+        android:id="@+id/ssidHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ID"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/ssid"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/ssid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ID"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/ssid"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/passwordHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ssid"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/password"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ssid"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/password"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/apnHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/password"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/apn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/apn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/password"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/apn"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/gprsUserHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/apn"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/gprsUser"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/gprsUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/apn"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/gprsUser"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/gprsPassHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gprsUser"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/gprsPass"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/gprsPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/gprsUser"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="textPersonName"
+        android:hint="@string/gprsPass"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/mVperVHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/gprsPass"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/mVperV"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/mVperV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/gprsPass"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/mVperV"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/mVperAHdr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mVperV"
+        android:layout_toStartOf="@+id/center"
+        android:text="@string/mVperA"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/mVperA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/mVperV"
+        android:layout_toEndOf="@+id/center"
+        android:inputType="numberDecimal|numberSigned"
+        android:hint="@string/mVperA"
+        tools:ignore="LabelFor" />
+
+</RelativeLayout>
+
+                  
